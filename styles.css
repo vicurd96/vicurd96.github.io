@@ -12,6 +12,33 @@
   margin:.9em 0 .2em 1;
 }
 
+.fa-github:hover{
+  transition: .3s;
+  color: #212121;
+}
+
+.fa-linkedin-in:hover{
+  transition: .3s;
+  color: #2196f3 ;
+}
+
+.fa-twitter:hover{
+  transition: .3s;
+  color: #40c4ff;
+}
+
+.fa-quora:hover{
+  transition: .3s;
+  color: #b71c1c ;
+}
+
+.quote {
+  font-size: 1em;
+  font-weight: 300;
+  font-style: italic;
+  margin:.2em 0 .2em 1;
+}
+
 .header nav {
   display: inline-block;
   box-shadow: none;
@@ -22,6 +49,14 @@
 .header ul{
   display: inline-block;
 }
+
+.avatar {
+  border:6px solid rgba(255, 255, 255, 0.8);
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+}
+
 span.badge.new {
   font-size: 1rem;
   display: inline-block;
@@ -29,4 +64,29 @@ span.badge.new {
   text-align:center;
   float:none;
   border-radius:5px;
+}
+
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+    object-position:100% 20%;
+}
+
+.card.medium .card-image{
+  overflow:inherit;
+}
+
+.card.medium .card-content{
+  overflow:inherit;
+}
+
+.experience {
+  max-height: 200px;
+  object-fit: cover;
+  object-position:100% 100%;
+}
+
+.card img.materialized.active {
+    max-height: none;
+    object-fit: none;
 }

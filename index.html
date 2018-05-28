@@ -15,19 +15,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="init.js"></script>
   </head>
-  <body>
+  <body class="grey lighten-4">
     <header class="header indigo accent-3">
-      <img class="circle responsive-img center-align" src="images/profile.jpg">
+      <img class="avatar circle center-align z-depth-3" src="images/profile.jpg"/>
       <h1 class="center-align white-text">Víctor Urdaneta</h1>
-      <span class="red lighten-1 center-align new badge" data-badge-caption="">Computer Sciences Student</span>
-      <nav class="indigo accent-3">
+      <span class="red lighten-2 center-align new badge" data-badge-caption="">Computer Sciences Student</span><br>
+      <span class="quote white-text center-align">"Science is what we understand well enough to explain to a computer.<br>Art is everything else we do." - <b>Donald Knuth</b></span>
+      <nav class="indigo accent-3 navbar-fixed">
           <div class="nav-wrapper">
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="hide-on-med-and-down center">
-              <li><a href="sass.html"><i class="fab fa-linkedin-in tooltipped" data-position="bottom" data-tooltip="LinkedIn"></i></a></li>
-              <li><a href="badges.html"><i class="fab fa-github tooltipped" data-position="bottom" data-tooltip="Github"></i></a></li>
-              <li><a href="collapsible.html"><i class="fab fa-quora tooltipped" data-position="bottom" data-tooltip="Quora"></i></a></li>
-              <li><a href="mobile.html"><i class="fab fa-twitter tooltipped" data-position="bottom" data-tooltip="Twitter"></i></a></li>
+              <li class="tooltipped" data-position="bottom" data-tooltip="LinkedIn"><a href="https://www.linkedin.com/in/v%C3%ADctor-andr%C3%A9s-urdaneta-linares-64b432148/"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+              <li class="tooltipped" data-position="bottom" data-tooltip="Github"><a href="https://github.com/vicurd96"><i class="fab fa-github fa-2x"></i></a></li>
+              <li class="tooltipped" data-position="bottom" data-tooltip="Quora"><a href="https://es.quora.com/profile/V%C3%ADctor-Andr%C3%A9s-Urdaneta"><i class="fab fa-quora fa-2x"></i></a></li>
+              <li class="tooltipped" data-position="bottom" data-tooltip="Twitter"><a href="https://twitter.com/vicurd96"><i class="fab fa-twitter fa-2x"></i></a></li>
             </ul>
           </div>
       </nav>
@@ -38,5 +39,82 @@
       <li><a href="collapsible.html">Javascript</a></li>
       <li><a href="mobile.html">Mobile</a></li>
     </ul>
+    <div class="container section">
+      <div class="row">
+        <div class="col l4">
+          <div class="card medium hoverable scale-transition">
+            <div class="card-image">
+              <img src="images/personal.jpg"/>
+              <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">mail</i></a>
+              <span class="card-title">Contact</span>
+            </div>
+            <div class="card-content">
+              <br>
+              <p><i class="red-text lighten-3 fas fa-at fa-2x left"></i><span class="right">vicurd96@gmail.com</span></p>
+              <br>
+              <div class="divider"></div>
+              <br>
+              <p><i class="blue-text lighten-4 fab fa-telegram-plane fa-2x left"></i><span class="right">vicurd96</span></p>
+              <br>
+              <div class="divider"></div>
+              <br>
+              <p><i class="green-text lighten-4 fab fa-whatsapp fa-2x left"></i><span class="right">(58)&nbsp;4126621446</span></p>
+              <br>
+              <div class="divider"></div>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="col l8">
+          <div class="card medium white">
+            <div class="card-image">
+              <img src="images/aboutme.jpg"/>
+              <span class="card-title">Who am I?</span>
+            </div>
+            <!-- Card Content -->
+          </div>
+        </div>
+        <div class="col l5">
+          <div class="card medium white">
+            <div class="card-image">
+              <img src="images/skills.jpg"/>
+              <span class="card-title">Skills</span>
+            </div>
+            <div class="card-content">
+              <i class="purple-text lighten-4 fab fa-python fa-2x left"></i><p class="right">Python web developer (Django, Wagtail)</p>
+              <br>
+              <div class="divider"></div>
+              <br>
+              <i class="teal-text lighten-3 fas fa-database fa-2x left"></i><span class="right">DB administrator (MySQL, PostgreSQL)</span>
+              <br>
+              <div class="divider"></div>
+              <br>
+              <i class="green-text lighten-4 fab fa-node-js fa-2x left"></i><p class="right">Node.js developer (Junior)</p>
+              <br>
+              <div class="divider"></div>
+              <br>
+
+            </div>
+          </div>
+        </div>
+        <div class="col l7">
+          <div class="card medium white">
+            <div class="card-image">
+              <img src="images/awards.jpg"/>
+              <span class="card-title">Achievements, courses and certifications</span>
+            </div>
+          </div>
+        </div>
+        <div class="col l12">
+          <div class="card medium white">
+            <div class="card-image">
+              <img src="images/mywork.jpg"/>
+              <span class="card-title">Experience and projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
