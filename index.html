@@ -3,7 +3,7 @@
     <meta charset="UTF-8"/>
     <meta name="author" content="Victor Urdaneta"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Victor's page</title>
+    <title>Victor Urdaneta</title>
     <!-- ICONS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -15,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="init.js"></script>
   </head>
-  <body class="grey lighten-4">
+  <body id="top" class="grey lighten-4">
     <header class="header indigo accent-3">
       <img class="avatar circle center-align z-depth-3" src="images/profile.jpg"/>
       <h1 class="center-align white-text">Víctor Urdaneta</h1>
@@ -45,7 +45,7 @@
           <div class="card medium hoverable scale-transition">
             <div class="card-image">
               <img src="images/personal.jpg"/>
-              <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">mail</i></a>
+              <a href="mailto:vicurd96@gmail.com"class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">mail</i></a>
               <span class="card-title">Contact</span>
             </div>
             <div class="card-content">
@@ -75,7 +75,7 @@
           </div>
         </div>
         <div class="col l5">
-          <div class="card medium white">
+          <div class="card medium white hoverable">
             <div class="card-image">
               <img src="images/skills.jpg"/>
               <span class="card-title">Skills</span>
@@ -116,5 +116,10 @@
       </div>
     </div>
 
+    <div id="backto" class="fixed-action-btn">
+      <a class="btn-floating btn-large blue darken-1">
+        <i class="large material-icons">keyboard_arrow_up</i>
+      </a>
+    </div>
   </body>
 </html>
