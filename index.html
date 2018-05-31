@@ -7,19 +7,21 @@
     <!-- ICONS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	<!-- FAVICON -->
-	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-	<link rel="manifest" href="images/favicon/site.webmanifest">
-	<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#00aba9">
-	<meta name="theme-color" content="#ffffff">
-	<!-- CSS -->
+  	<!-- FAVICON -->
+  	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  	<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  	<meta name="msapplication-TileColor" content="#00aba9">
+  	<meta name="theme-color" content="#ffffff">
+  	<!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link rel="stylesheet" href="styles.css">
     <!-- JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="init.js"></script>
   </head>
@@ -49,55 +51,63 @@
     </ul>
     <div class="container section">
       <div class="row">
-        <div class="col l4 s12">
+        <div class="col l4 m5 s12">
           <div class="card medium hoverable scale-transition">
             <div class="card-image">
               <img src="images/personal.jpg"/>
               <a href="mailto:vicurd96@gmail.com"class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">mail</i></a>
-              <span class="card-title">Contact</span>
+              <span class="card-title"><i class="fas fa-address-card"></i>&nbsp;Contact</span>
             </div>
             <div class="card-content">
               <br>
-              <p><i class="red-text lighten-3 fas fa-at fa-2x left"></i><span class="text right">vicurd96@gmail.com</span></p>
+              <p><i class="red-text lighten-3 fas fa-at fa-2x left hide-on-med-only"></i><span class="text right">vicurd96@gmail.com</span></p>
+              <p><i class="red-text lighten-3 fas fa-at fa-lg left hide-on-small-only hide-on-large-only"></i></p>
               <br>
               <div class="divider"></div>
               <br>
-              <p><i class="blue-text lighten-4 fab fa-telegram-plane fa-2x left"></i><span class="text right">vicurd96</span></p>
+              <p><i class="blue-text lighten-4 fab fa-telegram-plane fa-2x left hide-on-med-only"></i><span class="text right">vicurd96</span></p>
+              <p><i class="blue-text lighten-4 fab fa-telegram-plane fa-lg left hide-on-small-only hide-on-large-only"></i></p>
               <br>
               <div class="divider"></div>
               <br>
-              <p><i class="green-text lighten-4 fab fa-whatsapp fa-2x left"></i><span class="text right">(58)&nbsp;4126621446</span></p>
+              <p><i class="green-text lighten-4 fab fa-whatsapp fa-2x left hide-on-med-only"></i><span class="text right">(58)&nbsp;4126621446</span></p>
+              <p><i class="green-text lighten-4 fab fa-whatsapp fa-lg left hide-on-small-only hide-on-large-only"></i></p>
               <br>
               <div class="divider"></div>
               <br>
             </div>
           </div>
         </div>
-        <div class="col l8 s12">
-          <div class="card medium white">
+        <div class="col l8 m7 s12">
+          <div class="card hoverable medium white">
             <div class="card-image">
               <img src="images/aboutme.jpg"/>
-              <span class="card-title">Who am I?</span>
+              <span class="card-title"><i class="fas fa-user-circle"></i>&nbsp;About me</span>
             </div>
-            <!-- Card Content -->
+            <div class="card-content">
+              <p>I'm a Computer Sciences Student at University of Zulia (LUZ), focused on learning all about databases and machine learning.
+                Also an astrophysics lover and a natural leader.<br><br>
+                Dynamic, enthusiast and passionate are some terms that would describe myself and my work, but I couldn't define myself in words.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col l5 m5 s12">
+        <div class="col l5 m12 s12">
           <div class="card medium white hoverable">
             <div class="card-image">
               <img src="images/skills.jpg"/>
-              <span class="card-title">Skills</span>
+              <span class="card-title"><i class="fas fa-code-branch"></i>&nbsp;Skills</span>
             </div>
             <div class="card-content">
               <i class="purple-text lighten-4 fab fa-python fa-2x left"></i><p class="right text-skills">Python web developer</p>
               <br>
               <div class="divider"></div>
               <br>
-              <i class="teal-text lighten-3 fas fa-database fa-2x left"></i><span class="right text-skills">Database architect & administrator</span>
-              <br>
+              <i class="red-text lighten-4 fas fa-database fa-2x left"></i><span class="right text-skills">Database architect & <br>administrator</span>
+              <br><br>
               <div class="divider"></div>
               <br>
-              <i class="green-text lighten-4 fab fa-node-js fa-2x left"></i><p class="right text-skills">Node.js developer (Junior)</p>
+              <i class="black-text fab fa-linux fa-2x left"></i><p class="right text-skills">Linux proeficient user</p>
               <br>
               <div class="divider"></div>
               <br>
@@ -105,11 +115,36 @@
             </div>
           </div>
         </div>
-        <div class="col l7 m7 s12">
+        <div class="col l7 m12 s12">
           <div class="card medium white">
             <div class="card-image">
               <img src="images/awards.jpg"/>
-              <span class="card-title">Achievements, courses and certifications</span>
+              <span class="card-title"><i class="fas fa-star"></i>&nbsp;Achievements, courses and certifications</span>
+            </div>
+            <div class="card-content">
+              <div id="page1">
+                <i class="blue-text fas fa-certificate fa-2x left"></i><p class="right">Photoshop basics</p>
+                <br>
+                <div class="divider"></div>
+                <br>
+                <i class="blue-text fas fa-certificate fa-2x left"></i><p class="right">Cisco IT Essentials</p>
+                <br>
+                <div class="divider"></div>
+                <br>
+                <i class="yellow-text fas fa-certificate fa-2x left"></i><p class="right">2015 Honor roll (LUZ)</p>
+                <br>
+                <div class="divider"></div>
+              </div>
+              <div id="page2">
+                <i class="yellow-text fas fa-certificate fa-2x left"></i><p class="right">2016 Honor roll (LUZ)</p>
+                <br>
+                <div class="divider"></div>
+                <br>
+              </div>
+                <ul class="footer-card pagination center-align">
+                  <li id="back" class="disabled"><a href="#!">BACK</a></li>
+                  <li id="next" class="waves-effect"><a href="#!">NEXT</a></li>
+                </ul>
             </div>
           </div>
         </div>
@@ -117,7 +152,7 @@
           <div class="card medium white">
             <div class="card-image">
               <img src="images/mywork.jpg"/>
-              <span class="card-title">Experience and projects</span>
+              <span class="card-title"><i class="fas fa-file-code"></i>&nbsp;Experience and projects</span>
             </div>
           </div>
         </div>
