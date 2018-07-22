@@ -6,6 +6,7 @@
     <title>Victor Urdaneta</title>
     <!-- ICONS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   	<!-- FAVICON -->
   	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
@@ -46,7 +47,8 @@
       <li><a href="collapsible.html"><i class="fab fa-quora fa-2x"></i>Quora</a></li>
       <li><a href="mobile.html"><i class="fab fa-twitter fa-2x"></i>Twitter</a></li>
     </ul>
-    <div class="container section">
+  <div class="section">
+    <div class="container">
       <div class="row">
         <div class="col l4 m5 s12">
           <div class="card medium hoverable scale-transition">
@@ -90,12 +92,45 @@
           </div>
         </div>
         <div class="col l5 m12 s12">
-          <div class="card medium white hoverable">
-            <div class="card-image">
+          <div class="hoverable" style="margin: .5rem 0 1rem 0;">
+            <!--<div class="card-image">
               <img src="images/skills.jpg"/>
               <span class="card-title"><i class="fas fa-code-branch"></i>&nbsp;Skills</span>
+            </div>-->
+            <div id="achievements" class="carousel carousel-slider center">
+              <div class="carousel-fixed-item center">
+                <h6 class="white-text"><i class="fas fa-code-branch white-text"></i>&nbsp;Skills</h6>
+              </div>
+              <div class="carousel-item amber white-text" href="#one!">
+                <div class="achivement">
+                  <i class="fab fa-python fa-4x"></i>
+                  <h2>Python</h2>
+                  <h6>Building websites and restful services with Django and Flask.</h6>
+                </div>
+              </div>
+              <div class="carousel-item green white-text" href="#two!">
+                <div class="achivement">
+                  <i class="devicon-dot-net-plain" style="font-size:5rem;"></i>
+                  <h2>ASP.NET</h2>
+                  <h6>Working and maintaining websites with C#, ASP.NET MVC and LINQ</h6>
+                </div>
+              </div>
+              <div class="carousel-item indigo accent-3 white-text" href="#three!">
+                <div class="achivement">
+                   <i class="devicon-mysql-plain" style="font-size:5rem;"></i>
+                  <h2>SQL</h2>
+                  <h6>Building, designing and maintaining database systems and querying efficiently.</h6>
+                </div>
+              </div>
+              <div class="carousel-item red white-text" href="#four!">
+                <div class="achivement">
+                  <i class="devicon-linux-plain" style="font-size:5rem;"></i>
+                  <h2>GNU/Linux</h2>
+                  <h6>Experienced and proficient user in GNU/Linux systems, working with bash and ssh.</h6>
+                </div>
+              </div>
             </div>
-            <div class="card-content">
+            <!--<div class="card-content">
               <i class="purple-text lighten-4 fab fa-python fa-2x left"></i><p class="right text-skills">Python web developer</p>
               <br>
               <div class="divider"></div>
@@ -108,44 +143,43 @@
               <br>
               <div class="divider"></div>
               <br>
-
-            </div>
+            </div>-->
           </div>
         </div>
         <div class="col l7 m12 s12">
-          <div class="card medium white hoverable">
-            <div class="card-image">
-              <img src="images/awards.jpg"/>
-              <span class="card-title"><i class="fas fa-star"></i>&nbsp;Achievements, courses and certifications</span>
-            </div>
-            <div class="card-content">
-              <div id="page1">
-                <i class="blue-text fas fa-certificate fa-2x left"></i><p class="right">Adobe Photoshop basics</p>
-                <br>
-                <div class="divider"></div>
-                <br>
-                <i class="blue-text fas fa-certificate fa-2x left"></i><p class="right">Cisco IT Essentials</p>
-                <br>
-                <div class="divider"></div>
-                <br>
-                <i class="yellow-text fas fa-certificate fa-2x left"></i><p class="right">2015 Honor roll (LUZ)</p>
-                <br>
-                <div class="divider"></div>
+          <div class="hoverable" style="margin: .5rem 0 1rem 0;">
+            <div id="skills" class="carousel carousel-slider center">
+              <div class="carousel-fixed-item center">
+                <h6 class="white-text"><i class="fas fa-star white-text"></i>&nbsp;Achivements, courses and certifications</h6>
               </div>
-              <div id="page2">
-                <i class="yellow-text fas fa-certificate fa-2x left"></i><p class="right">2016 Honor roll (LUZ)</p>
-                <br>
-                <div class="divider"></div>
-                <br>
-                <i class="yellow-text fas fa-certificate fa-2x left"></i><p class="right italic">2017 Honor roll (LUZ)</p>
-                <br>
-                <div class="divider"></div>
-                <br>
+              <div class="carousel-item red white-text" href="#one!">
+                <div class="achivement">
+                  <i class="fas fa-id-card-alt fa-4x"></i>
+                  <h2>Adobe Photoshop Course</h2>
+                  <h6>August, 2010</h6>
+                </div>
               </div>
-                <ul class="footer-card pagination center-align">
-                  <li id="back" class="disabled"><a href="#!">BACK</a></li>
-                  <li id="next" class="waves-effect"><a href="#!">NEXT</a></li>
-                </ul>
+              <div class="carousel-item green white-text" href="#two!">
+                <div class="achivement">
+                  <i class="fas fa-laptop fa-4x"></i>
+                  <h2>Cisco IT Essentials</h2>
+                  <h6>March, 2012</h6>
+                </div>
+              </div>
+              <div class="carousel-item indigo accent-3 white-text" href="#three!">
+                <div class="achivement">
+                  <i class="large material-icons">school</i>
+                  <h2>Honor roll at LUZ</h2>
+                  <h6>November, 2015</h6>
+                </div>
+              </div>
+              <div class="carousel-item indigo accent-3 white-text" href="#four!">
+                <div class="achivement">
+                  <i class="large material-icons">school</i>
+                  <h2>Honor roll at LUZ</h2>
+                  <h6>November, 2016</h6>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -165,6 +199,7 @@
         </div>
       </div>
     </div>
+  </div>
 
     <div id="backto" class="fixed-action-btn">
       <a class="btn-floating btn-large blue darken-1">

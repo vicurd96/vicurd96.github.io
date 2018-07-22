@@ -95,3 +95,7 @@ span.badge.new {
     max-height: none;
     object-fit: none;
 }
+
+.achivement {
+  padding-top: 4rem;
+}
