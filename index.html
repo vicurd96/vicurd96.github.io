@@ -17,12 +17,13 @@
   	<meta name="theme-color" content="#ffffff">
   	<!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="js/jquery.translate.js"></script>
-    <script src="init.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/translator.js"></script>
   </head>
   <body id="top" class="grey lighten-4">
     <header class="header indigo accent-3">
@@ -187,8 +188,8 @@
         <i class="large material-icons">translate</i>
       </a>
       <ul>
-        <li><a id="es" class="btn-floating amber"><b>ES</b></a></li>
-        <li><a id="en" class="btn-floating red"><b>EN</b></a></li>
+        <li class="tooltipped" data-position="left" data-tooltip="Español"><a id="es" class="btn-floating amber"><b>ES</b></a></li>
+        <li class="tooltipped" data-position="left" data-tooltip="English"><a id="en" class="btn-floating red"><b>EN</b></a></li>
       </ul>
     </div>
   </body>
