@@ -41,6 +41,11 @@ li.quora:hover a, li.quora:hover i {
   color: #b71c1c;
 }
 
+li.curriculum:hover a, li.curriculum:hover i {
+  transition: .3s;
+  color: #ff4081;
+}
+
 .quote {
   font-size: 1em;
   font-weight: 300;

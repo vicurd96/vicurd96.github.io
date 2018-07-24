@@ -56,6 +56,18 @@ $(document).ready(function(){
       es: "Experiencia y proyectos",
       en: "Experience and projects",
     },
+    "Web developer": {
+      es: "Desarrollador web",
+      en: "Web developer"
+    },
+    "Developing websites with Microsoft Visual Studio and using C#, ASP.NET MVC and LINQ. Source code management and version control using TFS and Git. Deploying and working on applications and website both in production as test environments.": {
+      es: "Desarrollo de páginas web con Microsoft Visual Studio utilizando C#, MVC y LINQ. Manejo de control de versiones y actividades con TFS y Git. Publicación y mantenimiento de las aplicaciones y páginas web tanto en producción como en entorno de pruebas.",
+      en: "Developing websites with Microsoft Visual Studio and using C#, ASP.NET MVC and LINQ. Source code management and version control using TFS and Git. Deploying and working on applications and website both in production as test environments."
+    },
+    "Developer and owner": {
+      es: "Desarrollador y creador",
+      en: "Developer and owner"
+    },
     "Squirrel Wallet is a cryptocurrency web-based wallet for bitcoins. You can host your own web wallet and generate your pair-keys, transact and update a profile. Also you can check outcoming/incoming transactions info even if you're not registered.": {
       es: "Squirrel Wallet es un monedero de criptomonedas web para bitcoin. Puedes desplegar tu propio monedero web y generar tus claves, transar y actualizar un perfil. También puedes ver la información de transacciones entrantes y salientes incluso si no estás registrado.",
       en: "Squirrel Wallet is a cryptocurrency web-based wallet for bitcoin and ethers. You can host your own web wallet and generate your pair-keys, transact and update a profile. Also you can check outcoming/incoming transactions info even if you're not registered."
