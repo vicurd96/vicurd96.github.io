@@ -91,7 +91,7 @@ span.badge.new {
 }
 
 .card.medium .card-content{
-  overflow:inherit;
+  overflow:scroll;
 }
 
 .experience {
