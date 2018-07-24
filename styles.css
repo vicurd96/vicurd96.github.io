@@ -12,24 +12,29 @@
   margin:.9em 0 .2em 1;
 }
 
-.fa-github:hover{
+li .fa-github:hover{
   transition: .3s;
   color: #212121;
 }
 
-.fa-linkedin-in:hover{
+li .fa-linkedin-in:hover{
   transition: .3s;
   color: #2196f3 ;
 }
 
-.fa-twitter:hover{
+li .fa-twitter:hover{
   transition: .3s;
   color: #40c4ff;
 }
 
-.fa-quora:hover{
+li .fa-quora:hover{
   transition: .3s;
   color: #b71c1c ;
+}
+
+li .fa-gitlab:hover{
+  transition: .3s;
+  color: #ffa000;
 }
 
 .quote {
