@@ -21,32 +21,34 @@
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="js/jquery.translate.js"></script>
     <script src="init.js"></script>
   </head>
   <body id="top" class="grey lighten-4">
     <header class="header indigo accent-3">
       <img class="avatar circle center-align z-depth-3" src="images/profile.jpg"/>
-      <h1 class="center-align white-text">Víctor Urdaneta</h1>
-      <span class="red lighten-2 center-align new badge" data-badge-caption="">Computer Sciences Student</span><br>
-      <span class="quote white-text center-align">"Science is what we understand well enough to explain to a computer.<br>Art is everything else we do." - <b>Donald Knuth</b></span>
+      <h1 class="center-align white-text">Víctor Andrés Urdaneta</h1>
+      <span class="red lighten-2 center-align new badge trn" data-badge-caption="">Computer Sciences Student</span><br>
+      <span class="quote white-text center-align trn">"Science is what we understand well enough to explain to a computer.<br>Art is everything else we do." - <b>Donald Knuth</b></span>
       <nav class="indigo accent-3 navbar-fixed">
           <div class="nav-wrapper">
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="hide-on-med-and-down center">
-              <li class="tooltipped" data-position="bottom" data-tooltip="LinkedIn"><a href="https://www.linkedin.com/in/v%C3%ADctor-andr%C3%A9s-urdaneta-linares-64b432148/"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
-              <li class="tooltipped" data-position="bottom" data-tooltip="Github"><a href="https://github.com/vicurd96"><i class="fab fa-github fa-2x"></i></a></li>
-              <li class="tooltipped" data-position="bottom" data-tooltip="Gitlab"><a href="https://gitlab.com/vicurd96"><i class="fab fa-gitlab fa-2x"></i></a></li>
-              <li class="tooltipped" data-position="bottom" data-tooltip="Quora"><a href="https://es.quora.com/profile/V%C3%ADctor-Andr%C3%A9s-Urdaneta"><i class="fab fa-quora fa-2x"></i></a></li>
-              <li class="tooltipped" data-position="bottom" data-tooltip="Twitter"><a href="https://twitter.com/vicurd96"><i class="fab fa-twitter fa-2x"></i></a></li>
+              <li class="tooltipped linkedin" data-position="bottom" data-tooltip="LinkedIn"><a href="https://www.linkedin.com/in/v%C3%ADctor-andr%C3%A9s-urdaneta-linares-64b432148/"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+              <li class="tooltipped github" data-position="bottom" data-tooltip="Github"><a href="https://github.com/vicurd96"><i class="fab fa-github fa-2x"></i></a></li>
+              <li class="tooltipped gitlab" data-position="bottom" data-tooltip="Gitlab"><a href="https://gitlab.com/vicurd96"><i class="fab fa-gitlab fa-2x"></i></a></li>
+              <li class="tooltipped quora" data-position="bottom" data-tooltip="Quora"><a href="https://es.quora.com/profile/V%C3%ADctor-Andr%C3%A9s-Urdaneta"><i class="fab fa-quora fa-2x"></i></a></li>
+              <li class="tooltipped twitter" data-position="bottom" data-tooltip="Twitter"><a href="https://twitter.com/vicurd96"><i class="fab fa-twitter fa-2x"></i></a></li>
             </ul>
           </div>
       </nav>
     </header>
     <ul class="sidenav" id="mobile-demo">
-      <li><a href="sass.html"><i class="fab fa-linkedin-in fa-2x"></i>LinkedIn</a></li>
-      <li><a href="badges.html"><i class="fab fa-github fa-2x"></i>Github</a></li>
-      <li><a href="collapsible.html"><i class="fab fa-quora fa-2x"></i>Quora</a></li>
-      <li><a href="mobile.html"><i class="fab fa-twitter fa-2x"></i>Twitter</a></li>
+      <li class="linkedin"><a href="https://www.linkedin.com/in/v%C3%ADctor-andr%C3%A9s-urdaneta-linares-64b432148/"><i class="fab fa-linkedin-in fa-2x"></i>LinkedIn</a></li>
+      <li class="github"><a href="https://github.com/vicurd96"><i class="fab fa-github fa-2x"></i>Github</a></li>
+      <li class="gitlab"><a href="https://gitlab.com/vicurd96"><i class="fab fa-gitlab fa-2x"></i>Gitlab</a></li>
+      <li class="quora"><a href="https://es.quora.com/profile/V%C3%ADctor-Andr%C3%A9s-Urdaneta"><i class="fab fa-quora fa-2x"></i>Quora</a></li>
+      <li class="twitter"><a href="https://twitter.com/vicurd96"><i class="fab fa-twitter fa-2x"></i>Twitter</a></li>
     </ul>
   <div class="section">
     <div class="container">
@@ -56,7 +58,7 @@
             <div class="card-image">
               <img src="images/personal.jpg"/>
               <a href="mailto:vicurd96@gmail.com"class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">mail</i></a>
-              <span class="card-title"><i class="fas fa-address-card"></i>&nbsp;Contact</span>
+              <span class="card-title"><i class="fas fa-address-card"></i>&nbsp;<span class="trn">Contact</span></span>
             </div>
             <div class="card-content">
               <br>
@@ -82,103 +84,82 @@
           <div class="card hoverable medium white">
             <div class="card-image">
               <img src="images/aboutme.jpg"/>
-              <span class="card-title"><i class="fas fa-user-circle"></i>&nbsp;About me</span>
+              <span class="card-title"><i class="fas fa-user-circle"></i>&nbsp;<span class="trn">About me</span></span>
             </div>
             <div class="card-content">
-              <p>I'm a Computer Sciences Student at University of Zulia (LUZ), focused on learning all about databases and machine learning. Junior back-end developer.
-                Also an astrophysics lover and a natural leader.<br><br>
-                Dynamic, enthusiast and passionate are some terms that would describe myself and my work, but I couldn't define myself in words.
-              </p>
+              <p><span class="trn">I'm a Computer Sciences Student at University of Zulia (LUZ), focused on learning all about databases and machine learning. Junior back-end developer. Also an astrophysics lover and a natural leader.<br><br> Dynamic, enthusiast and passionate are some terms that would describe myself and my work, but I couldn't define myself in words.</span></p>
             </div>
           </div>
         </div>
         <div class="col l5 m12 s12">
           <div class="hoverable" style="margin: .5rem 0 1rem 0;">
-            <!--<div class="card-image">
-              <img src="images/skills.jpg"/>
-              <span class="card-title"><i class="fas fa-code-branch"></i>&nbsp;Skills</span>
-            </div>-->
             <div id="skills" class="carousel carousel-slider center">
               <div class="carousel-fixed-item center">
-                <h6 class="white-text"><i class="fas fa-code-branch white-text"></i>&nbsp;Skills</h6>
+                <h6 class="white-text"><i class="fas fa-code-branch white-text"></i>&nbsp;<span class="trn">Skills</span></h6>
               </div>
               <div class="carousel-item amber white-text" href="#one!">
-                <div class="achievement">
+                <div class="achievement container">
                   <i class="fab fa-python fa-4x"></i>
                   <h2>Python</h2>
-                  <h6>Building websites and restful services with Django and Flask.</h6>
+                  <h6><span class="trn">Building websites and restful services with Django and Flask.</span></h6>
                 </div>
               </div>
               <div class="carousel-item green white-text" href="#two!">
-                <div class="achievement">
+                <div class="achievement container">
                   <i class="devicon-dot-net-plain" style="font-size:5rem;"></i>
                   <h2>ASP.NET</h2>
-                  <h6>Working and maintaining websites with C#, ASP.NET MVC and LINQ</h6>
+                  <h6><span class="trn">Working and maintaining websites with C#, ASP.NET MVC and LINQ</span></h6>
                 </div>
               </div>
               <div class="carousel-item indigo accent-3 white-text" href="#three!">
-                <div class="achievement">
+                <div class="achievement container">
                    <i class="devicon-mysql-plain" style="font-size:5rem;"></i>
                   <h2>SQL</h2>
-                  <h6>Building, designing and maintaining database systems and querying efficiently.</h6>
+                  <h6><span class="trn">Building, designing and maintaining databases and querying efficiently.</span></h6>
                 </div>
               </div>
               <div class="carousel-item red white-text" href="#four!">
-                <div class="achievement">
+                <div class="achievement container">
                   <i class="devicon-linux-plain" style="font-size:5rem;"></i>
                   <h2>GNU/Linux</h2>
-                  <h6>Experienced and proficient user in GNU/Linux systems, working with bash and ssh.</h6>
+                  <h6><span class="trn">Experienced and proficient user in GNU/Linux systems, working with bash and ssh.</span></h6>
                 </div>
               </div>
             </div>
-            <!--<div class="card-content">
-              <i class="purple-text lighten-4 fab fa-python fa-2x left"></i><p class="right text-skills">Python web developer</p>
-              <br>
-              <div class="divider"></div>
-              <br>
-              <i class="red-text lighten-4 fas fa-database fa-2x left"></i><span class="right text-skills">Database architect & <br>administrator</span>
-              <br><br>
-              <div class="divider"></div>
-              <br>
-              <i class="black-text fab fa-linux fa-2x left"></i><p class="right text-skills">Linux proeficient user</p>
-              <br>
-              <div class="divider"></div>
-              <br>
-            </div>-->
           </div>
         </div>
         <div class="col l7 m12 s12">
           <div class="hoverable" style="margin: .5rem 0 1rem 0;">
             <div id="achievements" class="carousel carousel-slider center">
               <div class="carousel-fixed-item center">
-                <h6 class="white-text"><i class="fas fa-star white-text"></i>&nbsp;Achivements, courses and certifications</h6>
+                <h6 class="white-text"><i class="fas fa-star white-text"></i>&nbsp;<span class="trn">Achivements, courses and certifications</span></h6>
               </div>
               <div class="carousel-item red white-text" href="#one!">
                 <div class="achievement">
                   <i class="fas fa-id-card-alt fa-4x"></i>
-                  <h2>Adobe Photoshop Course</h2>
-                  <h6>August, 2010</h6>
+                  <h2><span class="trn">Adobe Photoshop Course</span></h2>
+                  <h6><span class="trn">August</span>, 2010</h6>
                 </div>
               </div>
               <div class="carousel-item green white-text" href="#two!">
                 <div class="achievement">
                   <i class="fas fa-laptop fa-4x"></i>
                   <h2>Cisco IT Essentials</h2>
-                  <h6>March, 2012</h6>
+                  <h6><span class="trn">March</span>, 2012</h6>
                 </div>
               </div>
               <div class="carousel-item indigo accent-3 white-text" href="#three!">
                 <div class="achievement">
                   <i class="large material-icons">school</i>
-                  <h2>Honor roll at LUZ</h2>
-                  <h6>November, 2015</h6>
+                  <h2><span class="trn">Honor roll at LUZ</span></h2>
+                  <h6><span class="trn">November</span>, 2015</h6>
                 </div>
               </div>
               <div class="carousel-item indigo accent-3 white-text" href="#four!">
                 <div class="achievement">
                   <i class="large material-icons">school</i>
-                  <h2>Honor roll at LUZ</h2>
-                  <h6>November, 2016</h6>
+                  <h2><span class="trn">Honor roll at LUZ</span></h2>
+                  <h6><span class="trn">November</span>, 2016</h6>
                 </div>
               </div>
             </div>
@@ -188,12 +169,11 @@
           <div class="card large white hoverable">
             <div class="card-image">
               <img src="images/mywork.jpg"/>
-              <span class="card-title"><i class="fas fa-project-diagram"></i>&nbsp;Experience and projects</span>
+              <span class="card-title"><i class="fas fa-project-diagram"></i>&nbsp;<span class="trn">Experience and projects</span></span>
             </div>
             <div class="card-content">
               <i class="fas fa-file-code fa-2x left teal-text"></i><h6 class="left"><b>Squirrel Wallet</b></h6><a href="https://github.com/vicurd96/squirrel_wallet"><i class="fab fa-github fa-2x right black-text"></i></a><br><br>
-              <p>Squirrel Wallet is a cryptocurrency web-based wallet for bitcoin and ethers. You can host your own web wallet and generate your pair-keys, transact and update a profile.
-              Also you can check outcoming/incoming transactions info even if you're not registered.</p><br>
+              <p><span class="trn">Squirrel Wallet is a cryptocurrency web-based wallet for bitcoins. You can host your own web wallet and generate your pair-keys, transact and update a profile. Also you can check outcoming/incoming transactions info even if you're not registered.</span></p><br>
               <div class="divider"></div>
             </div>
           </div>
@@ -202,37 +182,41 @@
     </div>
   </div>
 
-    <div id="backto" class="fixed-action-btn">
+    <div class="fixed-action-btn">
       <a class="btn-floating btn-large blue darken-1">
-        <i class="large material-icons">keyboard_arrow_up</i>
+        <i class="large material-icons">translate</i>
       </a>
+      <ul>
+        <li><a id="es" class="btn-floating amber"><b>ES</b></a></li>
+        <li><a id="en" class="btn-floating red"><b>EN</b></a></li>
+      </ul>
     </div>
   </body>
   <footer class="page-footer grey darken-3">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Social networks</h5>
+          <h5 class="white-text"><span class="trn">Social networks</span></h5>
           <p class="grey-text text-lighten-4"><a href="https://facebook.com/vicurd96"><i class="indigo-text fab fa-facebook-f fa-2x"></i></a>&nbsp;&nbsp;
             <a href="https://instagram.com/vicurd96"><i class="grey-text text-lighten-3 fab fa-instagram fa-2x"></i></a>&nbsp;&nbsp;
             <a href="https://www.youtube.com/channel/UC3z5yFxT1VLk6w0uyCocAkg"><i class="red-text text-lighten-1 fab fa-youtube fa-2x"></i></a></p>
         </div>
         <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
+          <h5 class="white-text"><span class="trn">Links</span></h5>
           <ul>
-            <li><i class="grey-text text-lighten-1 fas fa-globe"></i>&nbsp;<a class="grey-text text-lighten-3" href="https://luz.edu.ve">University of Zulia</a></li>
-            <li><i class="blue-text text-lighten-1 fab fa-twitter"></i>&nbsp;<a class="grey-text text-lighten-3" href="https://twitter.com/DptoCompFECLUZ">Computer Sciences @ LUZ</a></li>
-            <li><i class="red-text text-lighten-1 fab fa-youtube"></i>&nbsp;<a class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UCy5znSnfMsDwaLlROnZ7Qbg">Dot CSV (Artificial Intelligence)</a></li>
-            <li><i class="red-text text-lighten-1 fab fa-youtube"></i>&nbsp;<a class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UCH-Z8ya93m7_RD02WsCSZYA">Derivando (Maths)</a></li>
-            <li><i class="red-text text-lighten-1 fab fa-youtube"></i>&nbsp;<a class="grey-text text-lighten-3" href="https://www.youtube.com/user/ElRobotdePlaton">El robot de platón (Sciences)</a></li>
-            <li><i class="red-text text-darken-2 fab fa-quora"></i>&nbsp;<a class="grey-text text-lighten-3" href="https://www.quora.com/profile/Thomas-Cormen-1">Thomas Cormen (Computer Scientist)</a></li>
+            <li><i class="grey-text text-lighten-1 fas fa-globe"></i>&nbsp;<a class="grey-text text-lighten-3" href="https://luz.edu.ve"><span class="trn">University of Zulia</span></a></li>
+            <li><i class="blue-text text-lighten-1 fab fa-twitter"></i>&nbsp;<a class="grey-text text-lighten-3" href="https://twitter.com/DptoCompFECLUZ"><span class="trn">Computer Sciences @ LUZ</span></a></li>
+            <li><i class="red-text text-lighten-1 fab fa-youtube"></i>&nbsp;<a class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UCy5znSnfMsDwaLlROnZ7Qbg">Dot CSV (<span class="trn">Artificial Intelligence</span>)</a></li>
+            <li><i class="red-text text-lighten-1 fab fa-youtube"></i>&nbsp;<a class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UCH-Z8ya93m7_RD02WsCSZYA">Derivando (<span class="trn">Maths</span>)</a></li>
+            <li><i class="red-text text-lighten-1 fab fa-youtube"></i>&nbsp;<a class="grey-text text-lighten-3" href="https://www.youtube.com/user/ElRobotdePlaton">El robot de platón (<span class="trn">Sciences</span>)</a></li>
+            <li><i class="red-text text-darken-2 fab fa-quora"></i>&nbsp;<a class="grey-text text-lighten-3" href="https://www.quora.com/profile/Thomas-Cormen-1">Thomas Cormen (<span class="trn">Computer Scientist</span>)</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-        <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by <i class="fas fa-user"></i> Víctor Urdaneta
+        <i class="fas fa-code"></i> <span class="trn">with</span> <i class="fas fa-heart"></i> <span class="trn">by</span> <i class="fas fa-user"></i> Víctor Urdaneta
       </div>
     </div>
   </footer>

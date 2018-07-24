@@ -12,29 +12,33 @@
   margin:.9em 0 .2em 1;
 }
 
-li .fa-github:hover{
+.container {
+  width:80%;
+}
+
+li.gitlab:hover a, li.gitlab:hover i{
+  transition: .3s;
+  color: #ffa000;
+}
+
+li.github:hover a, li.github:hover i{
   transition: .3s;
   color: #212121;
 }
 
-li .fa-linkedin-in:hover{
+li.linkedin:hover a, li.linkedin:hover i{
   transition: .3s;
-  color: #2196f3 ;
+  color: #2196f3;
 }
 
-li .fa-twitter:hover{
+li.twitter:hover a, li.twitter:hover i {
   transition: .3s;
   color: #40c4ff;
 }
 
-li .fa-quora:hover{
+li.quora:hover a, li.quora:hover i {
   transition: .3s;
-  color: #b71c1c ;
-}
-
-li .fa-gitlab:hover{
-  transition: .3s;
-  color: #ffa000;
+  color: #b71c1c;
 }
 
 .quote {
