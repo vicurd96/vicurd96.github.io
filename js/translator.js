@@ -136,6 +136,14 @@ $(document).ready(function(){
       es: "con",
       en: "with",
     },
+    "Intern": {
+      es: "Pasante",
+      en: "Intern"
+    },
+    "2 months developing and maintaining websites components and reports using C#, ASP.NET MVC and LINQ.": {
+      es: "2 meses desarrollando y manteniendo componentes web y reportes utilizando C#, ASP.NET MVC y LINQ.",
+      en: "2 months developing and maintaining websites components and reports using C#, ASP.NET MVC and LINQ."
+    }
   }
   var translator = $('body').translate({lang: "en", t: dict});
   translator.lang("es");
