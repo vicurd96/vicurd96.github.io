@@ -6,42 +6,64 @@ $(document).ready(function(){
       fullWidth: true,
       indicators: true
     });
+    const achievements = $('#achievements');
+    const skills = $('#skills');
 
-    var skillsId = setInterval(function() {
-      if(!($("#skills").get(0).M_Carousel.pressed) && !($("#skills").get(0).M_Carousel.dragged)){
-        $('#skills').carousel('next');
+    let skillsId = setInterval(function() {
+      if(!(skills.get(0).M_Carousel.pressed) && !(skills.get(0).M_Carousel.dragged)){
+        skills.carousel('next');
       }
     }, 7000);
 
-    $("#skills").on('click',function() {
+    let achievementsId = setInterval(function () {
+        if (!(achievements.get(0).M_Carousel.pressed) && !(achievements.get(0).M_Carousel.dragged)) {
+            achievements.carousel('next');
+        }
+    }, 5000);
+
+    skills.on('click',function() {
       clearInterval(skillsId);
       setTimeout(function() {
-        setInterval(function() {
-          if(!($("#skills").get(0).M_Carousel.pressed) && !($("#skills").get(0).M_Carousel.dragged)){
-            $('#skills').carousel('next');
+        skillsId = setInterval(function() {
+          if(!(skills.get(0).M_Carousel.pressed) && !(skills.get(0).M_Carousel.dragged)){
+            skills.carousel('next');
           }
         }, 7000);
       }, 10000);
     });
 
-    var achievementsId = setInterval(function() {
-      if(!($("#achievements").get(0).M_Carousel.pressed) && !($("#achievements").get(0).M_Carousel.dragged)){
-        $('#achievements').carousel('next');
-      }
-    }, 5000);
-
-    $("#achievements").on('click',function() {
+    achievements.on('click',function() {
       clearInterval(achievementsId);
       setTimeout(function() {
-        setInterval(function() {
-          if(!($("#achievements").get(0).M_Carousel.pressed) && !($("#achievements").get(0).M_Carousel.dragged)){
-            $('#achievements').carousel('next');
+        achievementsId = setInterval(function() {
+          if(!(achievements.get(0).M_Carousel.pressed) && !(achievements.get(0).M_Carousel.dragged)){
+            achievements.carousel('next');
           }
         }, 5000);
       }, 10000);
     });
 
-    $('.fixed-action-btn').floatingActionButton({
-      hoverEnable:false
+    achievements.on('mouseenter', function(){
+        clearInterval(achievementsId);
+    });
+
+    achievements.on('mouseleave', function(){
+        achievementsId = setInterval(function() {
+            if(!(achievements.get(0).M_Carousel.pressed) && !(achievements.get(0).M_Carousel.dragged)){
+                achievements.carousel('next');
+            }
+        }, 5000);
+    });
+
+    skills.on('mouseenter', () => {
+        clearInterval(skillsId);
+    });
+
+    skills.on('mouseleave', () => {
+        skillsId = setInterval(function() {
+            if(!(skills.get(0).M_Carousel.pressed) && !(skills.get(0).M_Carousel.dragged)){
+                skills.carousel('next');
+            }
+        }, 5000);
     });
 });
