@@ -114,7 +114,7 @@ $(document).ready(function(){
     },
     "November": {
       es: "Noviembre",
-      en: "Noviembre"
+      en: "November"
     },
     "Contact": {
       es: "Contacto",
