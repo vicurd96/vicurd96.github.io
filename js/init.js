@@ -1,69 +1,64 @@
-$(document).ready(function(){
-    $('.sidenav').sidenav();
-    $('.tooltipped').tooltip();
-    $('.fixed-action-btn').floatingActionButton();
-    $('.carousel.carousel-slider').carousel({
-      fullWidth: true,
-      indicators: true
-    });
-    const achievements = $('#achievements');
-    const skills = $('#skills');
+function carouselInterval (instance,time){
+  return setInterval(function(){
+    if(!instance.pressed && !skills.dragged)
+      instance.next();
+  },time);
+}
 
-    let skillsId = setInterval(function() {
-      if(!(skills.get(0).M_Carousel.pressed) && !(skills.get(0).M_Carousel.dragged)){
-        skills.carousel('next');
-      }
-    }, 7000);
+function resetInterval (interval,instance,time,wait = 10000){
+  clearInterval(interval);
+  setTimeout(function(){
+    interval = carouselInterval(instance,time);
+  },wait);
+};
 
-    let achievementsId = setInterval(function () {
-        if (!(achievements.get(0).M_Carousel.pressed) && !(achievements.get(0).M_Carousel.dragged)) {
-            achievements.carousel('next');
-        }
-    }, 5000);
+document.addEventListener("DOMContentLoaded", function() {
+  const 
+    /* INICIALIZACIONES */
+    carousel          = document.querySelectorAll('.carousel'),
+    sidenav           = document.querySelectorAll('.sidenav'),
+    tooltip           = document.querySelectorAll('.tooltipped'),
+    button            = document.querySelectorAll('.fixed-action-btn'),
+    /* INSTANCIAS */
+    sidenavInstances  = M.Sidenav.init(sidenav),
+    tooltipInstances  = M.Tooltip.init(tooltip),
+    buttonInstances   = M.FloatingActionButton.init(button),
+    carouselInstances = M.Carousel.init(carousel, { fullWidth: true, indicators: true }),
+    /* CONSTANTES */
+    achievements      = carouselInstances[1],
+    skills            = carouselInstances[0];
 
-    skills.on('click',function() {
-      clearInterval(skillsId);
-      setTimeout(function() {
-        skillsId = setInterval(function() {
-          if(!(skills.get(0).M_Carousel.pressed) && !(skills.get(0).M_Carousel.dragged)){
-            skills.carousel('next');
-          }
-        }, 7000);
-      }, 10000);
-    });
+  const
+    achievementsId    = document.getElementById('achievements'),
+    skillsId          = document.getElementById('skills');
+  
+  var skillsIn = carouselInterval(skills,7000);
+  var achievementsIn = carouselInterval(achievements,5000);
 
-    achievements.on('click',function() {
-      clearInterval(achievementsId);
-      setTimeout(function() {
-        achievementsId = setInterval(function() {
-          if(!(achievements.get(0).M_Carousel.pressed) && !(achievements.get(0).M_Carousel.dragged)){
-            achievements.carousel('next');
-          }
-        }, 5000);
-      }, 10000);
-    });
+  document.addEventListener('click', function(event){
+    if(event.target.matches('#achievements')){
+      resetInterval(achievementsIn,achievements,5000);
+    } else if(event.target.matches('#skills')){
+      resetInterval(skillsIn,skills,7000);
+    } else {
+      return;
+    }
 
-    achievements.on('mouseenter', function(){
-        clearInterval(achievementsId);
-    });
+  }, false);
 
-    achievements.on('mouseleave', function(){
-        achievementsId = setInterval(function() {
-            if(!(achievements.get(0).M_Carousel.pressed) && !(achievements.get(0).M_Carousel.dragged)){
-                achievements.carousel('next');
-            }
-        }, 5000);
-    });
+  achievementsId.addEventListener('mouseenter', function(event){
+      clearInterval(achievementsIn);
+  }, false);
 
-    skills.on('mouseenter', () => {
-        clearInterval(skillsId);
-    });
+  skillsId.addEventListener('mouseenter', function(event){
+    clearInterval(skillsIn);
+  }, false);
 
-    skills.on('mouseleave', () => {
-        skillsId = setInterval(function() {
-            if(!(skills.get(0).M_Carousel.pressed) && !(skills.get(0).M_Carousel.dragged)){
-                skills.carousel('next');
-            }
-        }, 5000);
-    });
+  achievementsId.addEventListener('mouseleave', function(event){
+    achievementsIn = carouselInterval(achievements,5000);
+  }, false);
+
+  skillsId.addEventListener('mouseleave', function(event){
+    skillsIn = carouselInterval(skills,7000);
+  }, false);
 });

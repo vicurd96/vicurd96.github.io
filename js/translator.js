@@ -21,16 +21,16 @@ $(document).ready(function(){
         Dynamic, enthusiast and passionate are some terms that would describe myself and my work, but I couldn't define myself in words."
     },
     "Skills": {
-      es: "Destrezas",
-      en: "SKills"
+      es: "Habilidades",
+      en: "Skills"
     },
     "Achivements, courses and certifications": {
       es: "Logros, cursos y certificaciones",
       en: "Achivements, courses and certifications"
     },
-    "Building websites and restful services with Django and Flask.": {
-      es: "Construyendo sitios web y servicios restful con Django y Flask.",
-      en: "Building websites and restful services with Django and Flask."
+    "Building websites and RESTful services with Django and Flask.": {
+      es: "Construyendo sitios web y servicios RESTful con Django y Flask.",
+      en: "Building websites and RESTful services with Django and Flask."
     },
     "Working and maintaining websites with C#, ASP.NET MVC and LINQ": {
       es: "Trabajando y manteniendo sitios web con C#, ASP.NET MVC y LINQ.",
@@ -60,9 +60,9 @@ $(document).ready(function(){
       es: "Desarrollador web",
       en: "Web developer"
     },
-    "Developing websites with Microsoft Visual Studio and using C#, ASP.NET MVC and LINQ. Source code management and version control using TFS and Git. Deploying and working on applications and website both in production as test environments.": {
-      es: "Desarrollo de páginas web con Microsoft Visual Studio utilizando C#, MVC y LINQ. Manejo de control de versiones y actividades con TFS y Git. Publicación y mantenimiento de las aplicaciones y páginas web tanto en producción como en entorno de pruebas.",
-      en: "Developing websites with Microsoft Visual Studio and using C#, ASP.NET MVC and LINQ. Source code management and version control using TFS and Git. Deploying and working on applications and website both in production as test environments."
+    "Developing websites (.NET MVC and Entity Framework) and services (C#, Node.js). Source code management and version control using TFS and Git. Deploying and working on applications and website both in production as test environments.": {
+      es: "Desarrollo de sitios web (.NET MVC y Entity Framework) y servicios (C#, Node.js). Manejo de control de versiones y actividades con TFS y Git. Publicación y mantenimiento de las aplicaciones y páginas web tanto en producción como en entorno de pruebas.",
+      en: "Developing websites (.NET MVC and Entity Framework) and services (C#, Node.js). Source code management and version control using TFS and Git. Deploying and working on applications and website both in production as test environments."
     },
     "Developer and owner": {
       es: "Desarrollador y creador",
@@ -140,9 +140,25 @@ $(document).ready(function(){
       es: "Pasante",
       en: "Intern"
     },
-    "2 months developing and maintaining websites components and reports using C#, ASP.NET MVC and LINQ.": {
-      es: "2 meses desarrollando y manteniendo componentes web y reportes utilizando C#, ASP.NET MVC y LINQ.",
-      en: "2 months developing and maintaining websites components and reports using C#, ASP.NET MVC and LINQ."
+    "2 months developing and maintaining websites components and reports using .NET MVC and Entity Framework.": {
+      es: "2 meses desarrollando y manteniendo componentes web y reportes utilizando .NET MVC y Entity Framework.",
+      en: "2 months developing and maintaining websites components and reports using .NET MVC and Entity Framework."
+    },
+    "Building realtime and RESTful services with Express and Socket.IO": {
+      es: "Construyendo servicios en tiempo real y RESTful con Express y Socket.IO",
+      en: "Building realtime and restful services with Express and Socket.IO"
+    },
+    "jul. de 2018": {
+      es: "jul. de 2018",
+      en: "Jul 2018"
+    },
+    "jun. de 2018": {
+      es: "jun. de 2018",
+      en: "Jun 2018"
+    },
+    "actualidad": {
+      es: "actualidad",
+      en: "Present"
     }
   }
   var translator = $('body').translate({lang: "en", t: dict});
