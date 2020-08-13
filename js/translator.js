@@ -159,6 +159,10 @@ $(document).ready(function(){
     "actualidad": {
       es: "actualidad",
       en: "Present"
+    },
+    "Portfolio": {
+      es: "Portafolio",
+      en: "Portfolio"
     }
   }
   var translator = $('body').translate({lang: "en", t: dict});

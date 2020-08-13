@@ -25,21 +25,26 @@ document.addEventListener("DOMContentLoaded", function() {
     buttonInstances   = M.FloatingActionButton.init(button),
     carouselInstances = M.Carousel.init(carousel, { fullWidth: true, indicators: true }),
     /* CONSTANTES */
+    skills            = carouselInstances[0],
     achievements      = carouselInstances[1],
-    skills            = carouselInstances[0];
+    portfolio         = carouselInstances[2];
 
   const
     achievementsId    = document.getElementById('achievements'),
-    skillsId          = document.getElementById('skills');
+    skillsId          = document.getElementById('skills'),
+    portfolioId       = document.getElementById('portfolio');
   
   var skillsIn = carouselInterval(skills,7000);
   var achievementsIn = carouselInterval(achievements,5000);
+  var portfolioIn = carouselInterval(portfolio,7000);
 
   document.addEventListener('click', function(event){
     if(event.target.matches('#achievements')){
       resetInterval(achievementsIn,achievements,5000);
     } else if(event.target.matches('#skills')){
       resetInterval(skillsIn,skills,7000);
+    } else if(event.target.matches('#portfolio')){
+      resetInterval(portfolioIn,skills,7000);
     } else {
       return;
     }
@@ -54,11 +59,19 @@ document.addEventListener("DOMContentLoaded", function() {
     clearInterval(skillsIn);
   }, false);
 
+  portfolioId.addEventListener('mouseenter', function(event){
+    clearInterval(portfolioIn);
+  }, false);
+
   achievementsId.addEventListener('mouseleave', function(event){
     achievementsIn = carouselInterval(achievements,5000);
   }, false);
 
   skillsId.addEventListener('mouseleave', function(event){
     skillsIn = carouselInterval(skills,7000);
+  }, false);
+
+  portfolioId.addEventListener('mouseleave', function(event){
+    portfolioIn = carouselInterval(portfolio,7000);
   }, false);
 });
